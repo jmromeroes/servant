@@ -28,8 +28,8 @@ packages:
 --  doc/cookbook/db-sqlite-simple BROKEN blaze-textual
   doc/cookbook/file-upload
   doc/cookbook/generic
-  -- doc/cookbook/hoist-server-with-context
-  -- doc/cookbook/https
+  doc/cookbook/hoist-server-with-context
+  doc/cookbook/https
   -- doc/cookbook/jwt-and-basic-auth/
   doc/cookbook/pagination
   -- doc/cookbook/sentry

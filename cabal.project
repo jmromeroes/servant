@@ -63,10 +63,6 @@ write-ghc-environment-files: always
 allow-newer: servant-pagination-2.2.2:servant
 allow-newer: servant-pagination-2.2.2:servant-server
 
--- https://github.com/haskell-servant/servant-multipart/pull/41
-allow-newer: servant-multipart:servant
-allow-newer: servant-multipart:servant-server
-allow-newer: servant-multipart:servant-client-core
 allow-newer: servant-js:servant
 
 -- ghc 9
@@ -77,22 +73,8 @@ allow-newer: servant-js:base, servant-js:lens
 allow-newer: tdigest:base
 allow-newer: protolude:base, protolude:ghc-prim
 allow-newer: entropy:Cabal
-
-source-repository-package
-    type: git
-    location: https://github.com/haskell-foundation/foundation
-    tag: 3c195907c7e7c41fa0888237b6e36cdbde67df59
-    subdir: basement
-
-source-repository-package
-    type: git
-    location: https://github.com/andrewthad/hs-memory
-    tag: 683b402965e68800337af8f9b237d28be273c0d8
-
-source-repository-package
-    type: git
-    location: https://github.com/amesgen/cryptonite
-    tag: c5b2630ac396ad2d14ee1ed5d216907acaf2e79e
+allow-newer: servant-auth-server:base, servant-auth-server:memory, servant-auth-server:lens
+allow-newer: servant-auth:base, servant-auth:lens
 
 source-repository-package
     type: git

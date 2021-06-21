@@ -2,7 +2,7 @@ packages:
   servant/
   servant-client/
   servant-client-core/
---  servant-http-streams/ BROKEN io-streams
+--  servant-http-streams/
   servant-docs/
   servant-foreign/
   servant-server/
@@ -66,17 +66,9 @@ allow-newer: servant-pagination-2.2.2:servant-server
 allow-newer: servant-js:servant
 
 -- ghc 9
-allow-newer: servant-swagger:Cabal, swagger2:Cabal
-allow-newer: http-media:base
-allow-newer: servant-multipart:lens
-allow-newer: servant-js:base, servant-js:lens
+--allow-newer: servant-swagger:Cabal, swagger2:Cabal
+--allow-newer: http-media:base
 allow-newer: tdigest:base
-allow-newer: protolude:base, protolude:ghc-prim
-allow-newer: entropy:Cabal
 allow-newer: servant-auth-server:base, servant-auth-server:memory, servant-auth-server:lens
+allow-newer: servant-auth-server:http-client
 allow-newer: servant-auth:base, servant-auth:lens
-
-source-repository-package
-    type: git
-    location: https://github.com/mimi1vx/protolude
-    tag: 9eae1c43b4f43fb07ebb70ede52d9227b0877026
